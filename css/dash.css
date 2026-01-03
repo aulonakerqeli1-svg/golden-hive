@@ -81,7 +81,7 @@ body, html {
 /* Main content (right side) */
 .home-text {
   flex: 1;
-background-image: url('/bg.dash.png');
+background-image: url('/img/bg.dash.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

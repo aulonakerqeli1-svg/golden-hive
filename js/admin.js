@@ -59,12 +59,11 @@ function deleteUser(idx){
     renderUsers();
   }
 }
-
-// FUNKSIONI LOGOUT I SAKTË
+~
 function logout(){
-  // Opsionale: mund të fshish sesionin ose tokenin këtu
+
   alert("You have logged out successfully!");
-  window.location.href = "index.html"; // ose "login.html"
+  window.location.href = "login.html"; 
 }
 
 // Inicializo
