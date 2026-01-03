@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Golden Hive</title>
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <nav class="navbar">
+      <div class="logo">🐝 Admin Panel</div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#" class="active" onclick="showSection('users')">Përdoruesit</a></li>
+          <li><a href="#" onclick="showSection('subscriptions')">Abonimet</a></li>
+          <li><a href="#" onclick="showSection('messages')">Mesazhet</a></li>
+        </ul>
+      </div>
+      <button onclick="logout()">Logout</button>
+      
+    </nav>
+
+    <!-- Main content -->
+    <div class="main">
+      <!-- Users Section -->
+      <section id="users" class="section active">
+        <h2>Përdoruesit</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Emri</th>
+              <th>Email</th>
+              <th>Telefon</th>
+              <th>Veprime</th>
+            </tr>
+          </thead>
+          <tbody id="usersTable"></tbody>
+        </table>
+      </section>
+
+      <!-- Subscriptions Section -->
+      <section id="subscriptions" class="section">
+        <h2>Abonimet</h2>
+        <div id="subscriptionsList"></div>
+      </section>
+
+      <!-- Messages Section -->
+      <section id="messages" class="section">
+        <h2>Mesazhet</h2>
+        <div id="messagesList"></div>
+      </section>
+    </div>
+  </div>
+
+  <script src="/js/admin.js"></script>
+</body>
+</html>

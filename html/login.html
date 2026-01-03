@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+  <div class="login-container">
+    <div class="left">
+      <img src="/login.bg_left.jpg" alt="background">
+      <div class="beey-img">
+        <img src="/beey_maya.png" alt="bee image">
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="form-box">
+        <h1>Login</h1>
+
+        <!-- Tab për zgjedhjen roli -->
+        <div class="role-btn">
+          <button class="tab-btn active" onclick="showForm('user')">User</button>
+          <button class="tab-btn" onclick="showForm('admin')">Admin</button>
+          <button class="tab-btn" onclick="showForm('register')">Register</button>
+        </div>
+
+        <!-- Forma e User -->
+        <form id="user" class="form active" action="dashboard.html">
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <button type="submit">Login</button>
+        </form>
+
+        <!-- Forma e Admin -->
+        <form id="admin" class="form" action="admin_dashboard.html">
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <button type="submit">Login</button>
+        </form>
+
+        <!-- Forma e Register -->
+        <form id="register" class="form" action="dashboard.html">
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+          <button type="submit">Sign Up</button>
+        </form>
+
+        <!-- Social icons -->
+      
+      </div>
+    </div>
+  </div>
+
+ <script src="/js/login.js"></script>
+</body>
+</html>

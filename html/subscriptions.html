@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Abonimet - Golden Hive</title>
+  <link rel="stylesheet" href="/css/subscriptions.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <div class="logo">🐝 Golden Hive</div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="dashboard.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="messages.html">Messages</a></li>
+          <li><a href="subscriptions.html" class="active">Subscriptions</a></li>
+       
+        </ul>
+      </div>
+      <button onclick="logout()">Logout</button>
+    </nav>
+
+    <main class="main">
+      <header class="main-header">
+        <h1>Abonimet e mia</h1>
+        <p class="sub">Menaxho abonimet, rinovo ose shiko historinë e pagesave.</p>
+      </header>
+
+      <section class="plans-section">
+        <h2>Planet e disponueshme</h2>
+        <div class="plans" id="plansContainer"></div>
+      </section>
+
+      <section class="my-subscription">
+        <h2>Abonimi yt aktual</h2>
+        <div id="currentSubscription"></div>
+      </section>
+
+      <section class="history">
+        <h2>Historia e pagesave</h2>
+        <div id="historyList"></div>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="/js/subscriptions.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - User</title>
+  <link rel="stylesheet" href="/css/dash.css">
+</head>
+<body>
+  <div class="container">
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">🐝 Golden Hive</div>
+
+      <div class="nav-links">
+        <ul>
+          <li><a href="dashboard.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="messages.html">Messages</a></li>
+          <li><a href="subscriptions.html">Subscriptions</a></li>
+     
+        </ul>
+      </div>
+
+      <button onclick="logout()">Logout</button>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="home-text">
+      <h2>Sweeten your day with every drop 🐝</h2>
+    </div>
+  </div>
+
+  <script>
+    function logout() {
+      alert("You have logged out successfully!");
+     window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messages - Golden Hive</title>
+  <link rel="stylesheet" href="/css/messages.css">
+</head>
+<body>
+  <div class="container">
+    <!-- SIDEBAR -->
+    <nav class="navbar">
+      <div class="logo">🐝 Golden Hive</div>
+
+      <div class="nav-links">
+        <ul>
+          <li><a href="dashboard.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="messages.html" class="active">Messages</a></li>
+          <li><a href="subscriptions.html">Subscriptions</a></li>
+       
+        </ul>
+      </div>
+
+      <button onclick="logout()">Logout</button>
+    </nav>
+<div class="messages-container">
+  <!-- Inbox List -->
+  <div class="inbox">
+    <h2>Inbox - Offers</h2>
+    <ul>
+      <li class="message unread">
+        <span class="sender">Golden Hive</span>
+        <span class="preview">🎁 20% off on all honey jars this week!</span>
+        <span class="time">Today</span>
+      </li>
+      <li class="message unread">
+        <span class="sender">Golden Hive Store</span>
+        <span class="preview">🛒 Buy 2 beeswax candles, get 1 free!</span>
+        <span class="time">Yesterday</span>
+      </li>
+      <li class="message">
+        <span class="sender">Golden Hive Newsletter</span>
+        <span class="preview">🍯 New honey flavors available this month.</span>
+        <span class="time">Nov 10</span>
+      </li>
+      <li class="message">
+        <span class="sender">Golden Hive Team</span>
+        <span class="preview">🌻 Special offer: Free shipping on orders over $50.</span>
+        <span class="time">Nov 9</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Message Reader / Offer Detail -->
+  <div class="message-reader">
+    <h2>Offer Details</h2>
+    <div class="message-content">
+      <p><strong>From:</strong> Golden Hive</p>
+      <p>🎁 Enjoy 20% off on all honey jars this week. Use code <strong>HONEY20</strong> at checkout. Offer valid until Sunday!</p>
+    </div>
+
+    <form class="reply-form">
+      <label for="reply">Have questions? Contact us:</label>
+      <textarea id="reply" placeholder="Write your message here..."></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
+
+    
